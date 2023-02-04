@@ -1,3 +1,21 @@
+# What might a pipeline look like??
+
+```mermaid 
+graph TD;
+  gitSubmodule[OpenDocs repo is added as a submodule within the 11ty project folder]
+  getData[Detect updates from opendoc state courts crawler]
+  pullData[Pull changes]
+  cleanData[Combine md files and add judgment dates to front matter]
+  gitSubModule --> getData
+  getData --> pullData
+  pullData --> cleanData
+  cleanData --> triggerBuild[After data has been cleaned, trigger build of site]
+
+
+```
+
+
+
 # eleventy-base-blog
 
 A starter repository showing how to build a blog with the [Eleventy](https://github.com/11ty/eleventy) static site generator.
