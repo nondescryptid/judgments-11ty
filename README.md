@@ -6,7 +6,7 @@ graph TD;
   getData[Detect updates from opendoc state courts crawler]
   pullData[Pull changes]
   cleanData[Combine md files and add judgment dates to front matter]
-  gitSubModule --> getData
+  gitSubmodule --> getData
   getData --> pullData
   pullData --> cleanData
   cleanData --> triggerBuild[After data has been cleaned, trigger build of site]
