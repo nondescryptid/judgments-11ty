@@ -17,7 +17,7 @@
   --text-color-link-visited: #17050F;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
     --color-gray-20: #e0e0e0;
     --color-gray-50: #C0C0C0;
@@ -39,11 +39,12 @@
 
 html,
 body {
-  padding: 0;
+  padding: 0 10%;
   margin: 0;
   font-family: var(--font-family);
   color: var(--text-color);
   background-color: var(--background-color);
+
 }
 
 p:last-child {
@@ -52,7 +53,8 @@ p:last-child {
 p,
 .tmpl-post li,
 img {
-  max-width: 37.5em; /* 600px /16 */
+  /* max-width: 37.5em; 600px /16 */
+  /* max-width: 60% */
 }
 p,
 .tmpl-post li {
@@ -222,7 +224,7 @@ a[href].post-tag:focus {
 :root {
   --color-infobox: #ffc;
 }
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
     --color-infobox: #082840;
   }
